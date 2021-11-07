@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+
+		}
+		body{
+			 background-image: url(pic/scn.jpg);
+			 background-size: cover;
+			 width: 100%;
+			 height: 600px;
+
+		}
+		h1{
+			text-align: left;
+		}
+		h2{
+			text-align: left;
+		}
+		h3{
+			text-align: left;
+		}
+		h4{
+			text-align: left;
+		}
+		a{
+			margin-left: 110px;
+			color: blue;
+		}
+		a:hover{
+			color: black;
+			cursor: pointer;
+		}
+		.first{
+			width:390px;
+			height:500px;
+		    border-radius: 8px;
+			margin-left: 700px;
+			margin-top: 70px;
+			position: relative;
+			padding: 5px;
+			overflow:hidden;
+			transform: translate(-3%,9%);
+			box-shadow: 9px 9px 50px #000;	
+
+		}
+		.bt{
+			width: 220px;
+			margin: 35px auto;
+			position: relative;
+			box-shadow: 0 0 20px 9px #ff61241f;
+			border-radius: 30px;
+		}
+		.sec{
+			width: 30%;
+			height: 300;
+			margin-top: -450px;
+			margin-left: 100px;
+		}
+		.bt1{
+			padding: 10px 30px;
+			cursor: pointer;
+			background: transparent;
+			border: 0;
+			outline: none;
+			position: relative;
+		}
+		#butn{
+            top: 6;
+            left: 5;
+            position: absolute;
+            width: 110px;
+            height: 100%;
+            background: linear-gradient(to left,#000080,#deb887);
+            border-radius: 30px;
+            color: white;
+		}
+		.icon{
+			margin: 30px auto;
+			text-align: center;
+
+		}
+		.icon1{
+			width: 50px;
+			height: 50px;
+			background:url(pic/faces.jpg);
+			background-size: cover;
+			margin: 20px auto;
+			text-align: center;
+			margin-left: 160px;
+		}
+		.frm{
+            top: 180px;
+            position: absolute;
+            width: 280px;
+            transition: .5s;
+             margin: 18px;
+		}
+		.frm1{
+			top: 180px;
+            position: absolute;
+            width: 280px;
+            transition: .5s;
+            margin: 18px;
+		}
+		.inp{
+			width: 100%;
+			padding: 10px 0;
+			margin: 10px 0;
+			border-left: 0;
+			border-right: 0;
+			border-top: 0;
+			border-bottom: 1px solid #999;
+			outline: none;
+			background: transparent;
+		}
+		::-webkit-input-placeholder{
+			color: white;
+		}
+		.imp{
+			width: 100%;
+			padding: 3px 0;
+			margin: 8px 0;
+			border-left: 0;
+			border-right: 0;
+			border-top: 0;
+			border-bottom: 1px solid #999;
+			outline: none;
+			background: transparent;
+
+		}
+		
+		.sub{
+			width: 85%;
+			padding: 8px 30px;
+			cursor: pointer;
+			display: block;
+			margin: auto;
+			background: linear-gradient(to left,#000080,#deb887);
+			border: 0;
+			outline: none;
+			border-radius: 30px;
+		}
+		.sub:hover{
+            cursor: pointer;
+            color: white;
+		}
+		.chk{
+			margin: 30px 10px 30px 0;
+		}
+		span{
+			color: white;
+			font-size: 12px;
+			position: absolute;
+			bottom: 60px;
+
+		}
+		#login{
+            left: 50px;
+		}
+		#Register{
+            left: 450px;
+		}
+	</style>
+</head>
+<body>
+	<div class="first">
+	<div class="bt">
+		<div id="butn"></div>
+		<button type="button" class="bt1" onclick="login()">Sign In</button>
+		<button type="button" class="bt1" onclick="Register()">Sign Up</button>
+	</div>
+<div class="icon1"></div>
+<a href="">Sign in with facebook?</a>
+<form id="login" class="frm">
+	<input type="text" class="inp" placeholder="Email_id" required=""><br>
+	<input type="text" class="inp" placeholder="Enter Password" required=""><br>
+	<input type="checkbox" class="chk"><span><b>Remember Password</b></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" class="chk"><span><b>Forgot Password?</b></span><br>
+	<button type="button" class="sub">Log In</button>
+</form>
+<form id="Register" class="frm1">
+		<input type="text" class="imp"placeholder="First_name">
+		<input type="text"  class="imp"placeholder="Last_name">
+		<input type="text" class="imp" placeholder="Email_id">
+		<input type="text" class="imp"placeholder="Password">
+		<input type="text" class="imp"placeholder="Confirm Password">
+		<input type="checkbox" class="chk">&nbsp&nbsp<span><b>I agree to the terms and conditions</b></span><br>
+		<button type="button" class="sub">Register</button>
+		
+
+		
+</form>
+</div></div>
+	<div class="sec"><h1>Hai!</h1><br>
+<h2>
+	Welcome back to a wonderful year full of learning!</h2><br>
+	<h3>Enjoy each day and try your best in everything you do.</h3><br><h4>Stay positive,have fun and keep smiling.</h4> </div>
+	<script>
+		var x=document.getElementById("login");
+		var y=document.getElementById("Register");
+		var z=document.getElementById("butn");
+		function Register() {
+			x.style.left="-400px";
+			y.style.left="50px";
+			z.style.left="110px";
+		}
+		function login() {
+			x.style.left="50px";
+			y.style.left="450px";
+			z.style.left="0px";
+		}
+
+
+	</script>
+	
+</body>
+</html>
